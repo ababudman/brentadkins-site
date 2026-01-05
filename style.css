@@ -1,0 +1,146 @@
+:root {
+    --bg: #0d1117;
+    --bg-secondary: #161b22;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+    --accent: #58a6ff;
+    --border: #30363d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+header {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.tagline {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.intro p {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    border-left: 3px solid var(--accent);
+    padding-left: 1.25rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.category {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-muted);
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li strong {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.philosophy ul {
+    background: var(--bg-secondary);
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+}
+
+.philosophy li {
+    border-bottom: none;
+    padding: 0.4rem 0;
+}
+
+.connect {
+    text-align: center;
+}
+
+.connect a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.connect a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+footer p {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 2rem 1.25rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+}
