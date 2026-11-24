@@ -26,55 +26,71 @@
             <div class="category">
                 <h3>Compute</h3>
                 <ul>
-                    <li><strong>Proxmox VE Cluster</strong> — 3-node HA cluster running 30+ VMs and LXC containers</li>
-                    <li><strong>AI/ML Workstation</strong> — RTX 3090, Ollama, local LLMs for development and experimentation</li>
-                    <li><strong>Docker</strong> — 50+ containers across multiple hosts, all Docker Compose-based. Portainer for management, Dockwatch for update monitoring.</li>
+                    <li><strong>Proxmox VE Cluster</strong> — 3-node cluster on Ceph distributed storage, running a dozen-plus VMs and LXC containers</li>
+                    <li><strong>AI/ML Workstation</strong> — RTX 3090, Ollama, and Open WebUI for private, local LLMs</li>
+                    <li><strong>Docker</strong> — 100+ containers across six hosts, managed with Portainer and Dockhand</li>
                 </ul>
             </div>
 
             <div class="category">
-                <h3>Storage</h3>
+                <h3>Storage &amp; Backup</h3>
                 <ul>
-                    <li><strong>Synology NAS</strong> — Primary storage, backups, media</li>
-                    <li><strong>Unraid Server</strong> — Flexible array for bulk storage and Docker workloads</li>
-                    <li><strong>Proxmox Backup Server</strong> — Deduplicated VM/CT backups with off-site sync</li>
+                    <li><strong>Ceph</strong> — Replicated storage across the Proxmox cluster</li>
+                    <li><strong>Synology NAS</strong> — Primary media library and shared storage</li>
+                    <li><strong>UGREEN NAS</strong> — Four-bay array with mirrored NVMe for apps and containers</li>
+                    <li><strong>Proxmox Backup Server</strong> — Deduplicated VM and container backups</li>
+                    <li><strong>restic</strong> — Automated, monitored file-level backups</li>
                 </ul>
             </div>
 
             <div class="category">
                 <h3>Network</h3>
                 <ul>
-                    <li><strong>UniFi Dream Machine Pro</strong> — Router, firewall, IDS/IPS</li>
-                    <li><strong>Managed Switches</strong> — VLANs for IoT, cameras, management</li>
-                    <li><strong>Pi-hole</strong> — Network-wide DNS and ad blocking</li>
+                    <li><strong>UniFi Gateway Max</strong> — Routing and zone-based firewall</li>
+                    <li><strong>UniFi Switching &amp; Wi-Fi</strong> — 13 managed switches and 3 access points</li>
+                    <li><strong>Technitium DNS</strong> — Redundant internal DNS with network-wide ad blocking</li>
+                    <li><strong>NetBox</strong> — Source of truth for hardware, IPs, and inventory</li>
                 </ul>
             </div>
 
             <div class="category">
                 <h3>Self-Hosted Services</h3>
                 <ul>
-                    <li><strong>Vaultwarden</strong> — Password management (bye, 1Password)</li>
-                    <li><strong>Plex</strong> — Media streaming</li>
+                    <li><strong>Jellyfin &amp; Plex</strong> — Private media streaming</li>
+                    <li><strong>Nextcloud</strong> — Files and collaboration</li>
+                    <li><strong>Immich</strong> — Photo library</li>
                     <li><strong>Home Assistant</strong> — Home automation</li>
                     <li><strong>Frigate</strong> — NVR with AI object detection</li>
+                    <li><strong>Paperless-ngx</strong> — Document management</li>
+                    <li><strong>Mealie</strong> — Recipe management</li>
                     <li><strong>n8n</strong> — Workflow automation</li>
-                    <li><strong>Uptime Kuma</strong> — Service monitoring</li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <h3>Observability</h3>
+                <ul>
+                    <li><strong>Prometheus &amp; Grafana</strong> — Metrics and dashboards</li>
+                    <li><strong>Loki</strong> — Centralized logs</li>
+                    <li><strong>Alertmanager</strong> — Alerts that reach my phone when something breaks</li>
                 </ul>
             </div>
 
             <div class="category">
                 <h3>Custom Projects</h3>
                 <ul>
-                    <li><strong>AI-Assisted Development</strong> — Local LLMs via Ollama, MCP servers for tool integration, n8n workflows for automation. Building tools that solve real problems at work.</li>
+                    <li><strong>Jarvis</strong> — My digital personal assistant and second brain. An AI agent built on Claude Code and a 6,000-note Obsidian vault that helps monitor, document, and fix the lab.</li>
+                    <li><strong>Ripper</strong> — A purpose-built web app for my disc collection. MakeMKV, HandBrake, GPU encoding, and TMDb lookup take a DVD or Blu-ray from the drive to my media library.</li>
+                    <li><strong>AI-Assisted Development</strong> — Local LLMs, MCP servers for tool integration, and n8n workflows for building tools that solve real problems.</li>
                 </ul>
             </div>
 
             <div class="category">
                 <h3>External Access</h3>
                 <ul>
-                    <li><strong>Pangolin</strong> — Zero-trust reverse proxy for external access</li>
-                    <li><strong>Traefik</strong> — Internal reverse proxy for 60+ services with native ACME</li>
-                    <li><strong>WireGuard</strong> — Site-to-site VPN tunnels</li>
+                    <li><strong>Pangolin</strong> — Self-hosted tunneled reverse proxy for external access</li>
+                    <li><strong>Traefik</strong> — Internal reverse proxy with native ACME</li>
+                    <li><strong>Tailscale</strong> — Private remote access</li>
                     <li><strong>Let's Encrypt</strong> — Automated SSL everywhere</li>
                 </ul>
             </div>
@@ -83,9 +99,9 @@
                 <h3>Security</h3>
                 <ul>
                     <li><strong>Authentik</strong> — SSO and identity provider for internal services</li>
-                    <li><strong>CrowdSec</strong> — Collaborative intrusion prevention</li>
+                    <li><strong>Wazuh</strong> — Security monitoring</li>
                     <li><strong>fail2ban</strong> — Brute force protection</li>
-                    <li><strong>Segregated VLANs</strong> — IoT devices can't talk to anything important</li>
+                    <li><strong>Firewall Zones</strong> — IoT devices and cameras are segmented from anything important</li>
                 </ul>
             </div>
         </section>
